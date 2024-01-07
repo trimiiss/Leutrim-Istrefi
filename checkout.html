@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <div class="container">
+    <div class="li-checkout-form">
+      <h3>Customer Information</h3>
+      <form id="checkoutForm">
+        <div>
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required>
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <h3>Shipping Address</h3>
+        <div>
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Enter your address" required>
+        </div>
+        <div>
+          <label for="city">City</label>
+          <input type="text" id="city" placeholder="Enter your city" required>
+        </div>
+        <div>
+          <label for="postalCode">Postal Code</label>
+          <input type="text" id="postalCode" placeholder="Enter your postal code" required>
+        </div>
+        <div>
+          <label for="state">State/Province</label>
+          <input type="text" id="state" placeholder="Enter your state/province" required>
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <select id="country" required>
+            <option value="">Select your country</option>
+            <option value="KS">Kosovo</option>
+            <option value="Al">Albania</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="UK">United Kingdom</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="li-product-details">
+      <h3>Product Details</h3>
+      <div class="li-product-item">
+        <img src="Image/Qunto-boy-2.webp" alt="Product Image 1">
+        <div class="li-product-details">
+          <div class="li-product-name">ROCKET GIRL T GREY</div>
+          <div class="li-product-size">L</div>
+          <div class="li-product-price">Lek 7,500.00</div>
+        </div>
+      </div>
+      <div class="li-product-item">
+        <img src="Image/Qunto-boy-4.webp" alt="Product Image 2">
+        <div class="li-product-details">
+            <div class="li-product-name">AMERICAN FLAGS T WHITE</div>
+            <div class="li-product-size">XL</div>
+            <div class="li-product-price">Lek 13,500.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="li-payment-method">
+        <h3>Payment Options</h3>
+        <div class="li-payment-options">
+          <label>
+            <input type="radio" name="payment" value="credit_card" checked>
+            <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+            Credit Card
+          </label>
+          <label>
+            <input type="radio" name="payment" value="paypal">
+            <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
+            PayPal
+          </label>
+          <label>
+            <input type="radio" name="payment" value="mastercard">
+            <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
+            Mastercard
+          </label>
+          <label>
+              <input type="radio" name="payment" value="amex">
+              <img src="https://img.icons8.com/color/48/000000/amex.png" alt="American Express">
+              American Express
+            </label>
+          </div>
+        </div>
+        <button type="button" class="li-button" id="purchaseButton">Complete Purchase</button>
+      <div id="purchaseText" style="display: none;">
+        Purchase was successfully completed!
+      </div>
+    </div>
+    </div>
+    <script>
+        document.getElementById('purchaseButton').addEventListener('click', function() {
+          document.getElementById('purchaseText').style.display = 'block';
+        });
+      </script>
+    
+ </body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    height: 3000;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    position: relative; 
+  }
+
+  .li-link-boxes {
+    padding-top: 20px;
+    width: 400px;
+  }
+
+  .li-link-name {
+    padding-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Karla, sans-serif;
+    position: relative;
+  }
+
+  li {
+    margin-top: 20px;
+    margin-left: 40px;
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  a {
+    font-family: Abel, sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 10px;
+  }
+
+  .li-copyright_text {
+    font-family: Abel, sans-serif;
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 74px;
+    position: absolute;
+    bottom: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    .li-copyright_text{
+      bottom: 70px;
+    }
+  }
+  .li-instagram-icon {
+    position: absolute;
+    font-weight: 400px;
+    top: 40px;
+    right: 60px;
+    font-size: 18px;
+    color: white;
+  }
+  .li-payment-icons {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;      
+}
+
+.li-payment-icons img {
+  width: 37px;
+  height: 23px; 
+  margin: 5px;
+  image-rendering: auto;
+}

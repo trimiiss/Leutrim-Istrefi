@@ -1,0 +1,336 @@
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.li-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Abel", sans-serif;
+  z-index: 1000;
+}
+.li-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+  margin-top: 36px;
+  z-index: 100;
+  border-bottom: 1px solid #0000001a;
+}
+.li-logo {
+  font-weight: bold;
+  order: 1;
+}
+.li-logo img{
+  width: 150px;
+  height: auto;
+}
+.li-nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  order: 0; 
+}
+.li-nav-links li {
+  margin: 0 15px;
+}
+.li-nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  font-family: Karla, sans-serif !important;
+  transition: color 0.3s; 
+}
+.li-menu-toggle {
+  display: none; 
+  cursor: pointer;
+  order: 0; 
+}
+.li-hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.li-sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  background: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 110px;
+  color: #fff;
+  z-index: 1; 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.li-sidebar a {
+  padding: 15px; 
+  text-decoration: none;
+  font-size: 18px !important;
+  color: black !important;
+  display: block;
+  border-bottom: 3px black;
+  transition: 0.3s;
+}
+.li-bag-icon {
+  position: relative;
+  display: inline-block; 
+}
+
+#cartCounter {
+  position: absolute;
+  top: -8px;
+  width: 7px;
+  right: -3px; 
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 5px; 
+  font-weight: bold; 
+}
+
+.li-right-section {
+  display: flex;
+  gap: 20px;
+  order: 2;
+}
+.li-user-icon img,
+.li-bag-icon img {
+  width: 30px; 
+}
+.li-sidebar .li-close-btn {
+  position: absolute;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  border-bottom: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .li-menu-toggle {
+    display: block;
+    height: 100%;
+    background-color: black; 
+  }
+
+  .li-nav-links {
+    display: none; 
+  }
+
+  .li-sidebar {
+    width: 100%;
+  }
+
+  .li-sidebar a {
+    font-size: 18px !important;
+    color: black !important;
+    padding: 15px !important;
+    border-bottom: 2px;
+    width: 100%;
+  }
+
+  .li-navbar {
+    z-index: 101;
+  }
+  .li-logo img{
+    width: 150px;
+    height: auto;
+  }
+}
+  
+  .li-login-container {
+    max-width: 700px; 
+    margin: 120px auto 50px auto; 
+    padding: 20px;
+    color: black; 
+  }
+
+  .li-login-container p {
+    text-align: center;
+    margin-bottom: 65px;
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: Karla, sans-serif;
+  }
+
+  .li-login-container .li-form-group {
+    margin-bottom: 30px; 
+  }
+
+  .li-login-container label {
+    font-weight: bold;
+  }
+
+  .li-login-container input[type="text"],
+  .li-login-container input[type="password"] {
+    width: 99%;
+    height: 30px; 
+    padding: 12px; 
+    border: 1px solid black; 
+    background-color: #ffffff; 
+    color: #000000; 
+    border-radius: 0; 
+    font-size: 16px; 
+  }
+
+  .li-login-container .btn-primary {
+    width: 99%;
+    padding: 12px; 
+    background-color: black; 
+    color: white; 
+    margin: 15px;
+    border: 1px solid #ffffff;
+    transition: all 0.3s ease; 
+    font-size: 15px;
+  }
+
+  .li-login-container .btn-primary:hover {
+    background-color: white; 
+    color: black; 
+  }
+  @media (max-width: 768px) {
+          .li-login-container {
+              margin: 75px auto; 
+              padding: 15px; 
+              max-width: 80%; 
+          }
+      }
+     .li-create-account-text {
+      padding-bottom: 7px;
+        margin-left: 18px;
+        font-size: 14px;
+    }
+    
+    .li-create-account-container {
+      margin-right: 10px;
+      font-size: 14px;
+  }
+  .li-account-text {
+      margin-right: 2px; 
+  }
+  
+  .li-create-account-link {
+      color: black;
+      font-weight: bold;
+      text-decoration: underline; 
+  }
+  .li-create-account-link:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline; 
+} 
+  
+    
+      footer {
+        background-color: black;
+        color: white;
+        width: 100%;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        height: 400px;
+        position: relative; 
+      }
+  
+      .li-link-boxes {
+        padding-top: 20px;
+        width: 400px;
+      }
+  
+      .li-link-name {
+        padding-top: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: Karla, sans-serif;
+        position: relative;
+      }
+  
+      li {
+        margin-top: 20px;
+        margin-left: 40px;
+        list-style: none;
+        padding-top: 10px;
+      }
+  
+      a {
+        font-family: Abel, sans-serif;
+        color: white;
+        font-size: 12px !important;
+        font-weight: 500;
+        text-decoration: none;
+        padding-top: 10px;
+      } 
+      a:hover {
+        font-family: Abel, sans-serif;
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        padding-top: 10px;
+      } 
+  
+      .li-copyright_text {
+        font-family: Abel, sans-serif;
+        color: white;
+        font-size: 11px;
+        font-weight: 400;
+        text-decoration: none;
+        opacity: 0.8;
+        margin-left: 74px;
+        position: absolute;
+        bottom: 20px;
+      }
+      @media screen and (max-width: 768px) {
+        .li-copyright_text{
+          bottom: 90px;
+        }
+      }
+      .li-instagram-icon {
+        position: absolute;
+        font-weight: 400px;
+        top: 40px;
+        right: 60px;
+        font-size: 18px;
+        color: white;
+      }
+      .li-payment-icons {
+      position: absolute;
+      bottom: 20px;
+      right: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;      
+    }
+  
+    .li-payment-icons img {
+      width: 37px;
+      height: 23px; 
+      margin: 5px;
+      image-rendering: auto;
+    }
+    
